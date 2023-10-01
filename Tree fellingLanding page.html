@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tree Care🌳</title>
+  </head>
+  <style>
+    .container {
+      display: block;
+      background: linear-gradient(
+        109.6deg,
+        rgb(251, 250, 225) 11.2%,
+        rgb(206, 240, 185) 47.5%,
+        rgb(59, 108, 68) 100.2%
+      );
+      margin: 30px auto;
+      padding: 30px;
+    }
+    img {
+      display: block;
+      padding: 0;
+      border-radius: 10px;
+    }
+    button {
+      display: block;
+      padding: 10px 10px 15px 10px;
+      background-color: #13765f;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      font-size: 30px;
+      line-height: 15px;
+      box-shadow: 6px 9px 5px 0px rgba(37, 39, 89, 0.2);
+      border-radius: 6px;
+      border-width: 1px;
+      opacity: 1;
+      transition: all 250ms ease;
+      cursor: pointer;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    p {
+      display: block;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Tree Care Services</h1>
+      <h2>Take care of all your tree needs with our professionals!</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/085/996/original/380163.jpg?1686907664"
+        alt="Tree feller"
+        width="560"
+      /><br />
+      <p>
+        <span class="message">
+          <strong>Tree care</strong> is the application of arboricultural
+          methods like <em>pruning, trimming, and felling/thinning </em>in built
+          <br />
+          environments. Road verge, greenways, backyard and park woody
+          vegetation are at the center of attention <br />
+          for the tree care industry.</span
+        ><span class="treeCare">
+          <a href="https://en.wikipedia.org/wiki/Tree_care" target="_blank"
+            >Read more on wikipedia</a
+          ></span
+        >
+      </p>
+      <p>
+        <button class="btn">Get a quote</button>
+      </p>
+
+      <script>
+        document.querySelector(".btn").addEventListener("click", function () {
+          let name = prompt("What is your name?");
+          if (name.length) {
+            alert(
+              "Thanks, " +
+                name +
+                " , we will be in touch. Meanwhile, Take care of the environment!"
+            );
+          } else {
+            alert("Please insert a valid name so that we can assist you.");
+          }
+        });
+      </script>
+      <hr />
+      <p>
+        Contact us: <br />
+        ☎️031 547 3301 <br />📱081 2340 293
+      </p>
+    </div>
+  </body>
+</html>
